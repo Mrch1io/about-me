@@ -1,6 +1,12 @@
 Hi, I'm Zicheng. I come from a business background and am teaching myself computer science. I build tools I want to use and test ideas I'm curious about.
 
-Here's how I've put that learning into practice. The links lead to implementation details, tests, and experiment results.
+Three results I would point to first:
+
+- **A learning-rate confound in a published comparison.** In a small-scale variant of Low-Rank Attention Residuals, lowering only the full-dimensional query learning rate to ¼ removed about 86% of the low-dimensional routing advantage, with the same sign on all 6 paired seeds. [Study](https://github.com/Mrch1io/attnres-query-lr#what-i-found)
+- **A data fix that flipped my own primary result.** After I corrected blank lines in 78 public example inputs, ExecExit's pre-registered stopping rule went from nominally passing its non-inferiority test to failing it, and the failed result is the one I report. [Two turning points](https://github.com/Mrch1io/execexit#two-moments-that-changed-my-conclusions)
+- **A feature dropped after a preregistered test.** Flagging likely mistranslations by disagreement between translation systems looked promising in a pilot, but on a previously unused work it ranked errors worse than chance (AUROC 0.34), so I left it out of the manga reader. [Experiment](https://github.com/Mrch1io/learn-english-with-manga#3-can-likely-mistranslated-bubbles-be-flagged-in-advance)
+
+Here's how I've put what I studied into practice. The links lead to implementation details, tests, and experiment results.
 
 | What I studied | How I used it |
 | --- | --- |
